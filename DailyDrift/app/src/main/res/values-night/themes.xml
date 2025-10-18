@@ -1,0 +1,96 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ===== Dark Mode Theme Overrides ===== -->
+    <style name="Base.Theme.DailyDrift" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Core brand colors (from your palette) -->
+        <item name="colorPrimary">@color/secondary_500</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorPrimaryContainer">@color/secondary_200</item>
+        <item name="colorOnPrimaryContainer">@color/text_primary</item>
+
+        <item name="colorSecondary">@color/accent_green_500</item>
+        <item name="colorOnSecondary">@color/text_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/secondary_500</item>
+        <item name="colorOnSecondaryContainer">@color/text_primary</item>
+
+        <item name="colorSurface">@color/primary_surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/primary_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/primary_background</item>
+
+        <!-- Status bar (dark background with light icons) -->
+        <item name="android:statusBarColor">@color/primary_surface</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+
+        <!-- Action bar overlay -->
+        <item name="actionBarTheme">@style/ThemeOverlay.DailyDrift.ActionBar</item>
+
+        <!-- Component defaults -->
+        <item name="materialButtonStyle">@style/Widget.DailyDrift.Button</item>
+        <item name="bottomNavigationStyle">@style/Widget.DailyDrift.BottomNavigationView</item>
+
+        <!-- ProgressBar (you use the platform ProgressBar) -->
+        <item name="android:progressBarStyleHorizontal">@style/Widget.DailyDrift.ProgressBar.Horizontal</item>
+
+        <!-- Shape appearances (used by some Material components) -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.DailyDrift.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.DailyDrift.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.DailyDrift.LargeComponent</item>
+    </style>
+
+    <!-- Public theme -->
+    <style name="Theme.DailyDrift" parent="Base.Theme.DailyDrift" />
+
+    <!-- ===== Dark Mode Overlays & Widgets ===== -->
+
+    <!-- Action Bar Theme Overlay - Dark Mode -->
+    <style name="ThemeOverlay.DailyDrift.ActionBar" parent="ThemeOverlay.Material3.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/secondary_200</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Material Button - Dark Mode -->
+    <style name="Widget.DailyDrift.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/secondary_500</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- Bottom NavigationView - Dark Mode -->
+    <style name="Widget.DailyDrift.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemBackground">@color/primary_nav_background</item>
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="itemRippleColor">@color/secondary_200</item>
+    </style>
+
+    <!-- Platform ProgressBar (horizontal) - Dark Mode -->
+    <style name="Widget.DailyDrift.ProgressBar.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressTint">@color/accent_green_500</item>
+        <item name="android:progressBackgroundTint">@color/primary_surface_variant</item>
+        <item name="android:indeterminateTint">@color/secondary_500</item>
+    </style>
+
+    <!-- Shapes -->
+    <style name="ShapeAppearance.DailyDrift.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.DailyDrift.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.DailyDrift.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+</resources>

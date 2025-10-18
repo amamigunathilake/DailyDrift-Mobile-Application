@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="16dp" />
+    <padding
+        android:left="0dp"
+        android:top="0dp"
+        android:right="0dp"
+        android:bottom="0dp" />
+    <gradient
+        android:type="linear"
+        android:angle="0"
+        android:startColor="@color/quick_card_start"
+        android:endColor="@color/quick_card_end" />
+</shape>

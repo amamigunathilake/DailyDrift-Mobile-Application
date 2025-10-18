@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+
+    <!-- Background stars -->
+    <path
+        android:fillColor="@color/onboarding_illustration_yellow"
+        android:pathData="M50,50 L52,58 L60,60 L52,62 L50,70 L48,62 L40,60 L48,58 Z" />
+    <path
+        android:fillColor="@color/onboarding_illustration_yellow"
+        android:pathData="M250,80 L252,88 L260,90 L252,92 L250,100 L248,92 L240,90 L248,88 Z" />
+    <path
+        android:fillColor="@color/onboarding_illustration_yellow"
+        android:pathData="M80,200 L82,208 L90,210 L82,212 L80,220 L78,212 L70,210 L78,208 Z" />
+    <path
+        android:fillColor="@color/onboarding_illustration_yellow"
+        android:pathData="M220,180 L222,188 L230,190 L222,192 L220,200 L218,192 L210,190 L218,188 Z" />
+
+    <!-- Large purple leaves -->
+    <path
+        android:fillColor="@color/onboarding_illustration_purple"
+        android:pathData="M30,40 Q20,30 25,20 Q30,15 40,25 Q35,35 30,40 Z" />
+    <path
+        android:fillColor="@color/onboarding_illustration_purple"
+        android:pathData="M270,50 Q280,40 275,30 Q270,25 260,35 Q265,45 270,50 Z" />
+    <path
+        android:fillColor="@color/onboarding_illustration_purple"
+        android:pathData="M20,180 Q10,170 15,160 Q20,155 30,165 Q25,175 20,180 Z" />
+    <path
+        android:fillColor="@color/onboarding_illustration_purple"
+        android:pathData="M280,200 Q290,190 285,180 Q280,175 270,185 Q275,195 280,200 Z" />
+
+    <!-- Small yellow branches -->
+    <path
+        android:fillColor="@color/onboarding_illustration_yellow"
+        android:strokeColor="@color/onboarding_illustration_yellow"
+        android:strokeWidth="2"
+        android:pathData="M60,60 L65,65 L70,60 L75,65 L80,60" />
+    <path
+        android:fillColor="@color/onboarding_illustration_yellow"
+        android:strokeColor="@color/onboarding_illustration_yellow"
+        android:strokeWidth="2"
+        android:pathData="M240,70 L245,75 L250,70 L255,75 L260,70" />
+
+    <!-- Music notes -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M100,80 Q105,75 110,80 Q105,85 100,80 Z" />
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M110,80 L110,60" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M200,100 Q205,95 210,100 Q205,105 200,100 Z" />
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M210,100 L210,80" />
+
+    <!-- Red flowers -->
+    <path
+        android:fillColor="@color/onboarding_illustration_red"
+        android:pathData="M40,220 Q35,215 40,210 Q45,215 40,220 Z" />
+    <path
+        android:fillColor="@color/onboarding_illustration_red"
+        android:pathData="M260,240 Q255,235 260,230 Q265,235 260,240 Z" />
+
+    <!-- Person figure (meditation pose) -->
+    <!-- Head -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M150,105 A15,15 0 1,1 150,135 A15,15 0 1,1 150,105 Z" />
+
+    <!-- Body (purple top) -->
+    <path
+        android:fillColor="@color/onboarding_illustration_purple"
+        android:pathData="M140,135 L160,135 L160,180 L140,180 Z" />
+
+    <!-- Arms -->
+    <path
+        android:fillColor="@color/onboarding_illustration_purple"
+        android:pathData="M130,150 L140,150 L140,170 L130,170 Z" />
+    <path
+        android:fillColor="@color/onboarding_illustration_purple"
+        android:pathData="M160,150 L170,150 L170,170 L160,170 Z" />
+
+    <!-- Legs (crossed) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M140,180 L150,180 L150,220 L140,220 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M150,180 L160,180 L160,220 L150,220 Z" />
+
+    <!-- Book on lap -->
+    <path
+        android:fillColor="@color/onboarding_illustration_red"
+        android:pathData="M135,190 L165,190 L165,200 L135,200 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M140,192 L160,192 L160,198 L140,198 Z" />
+
+    <!-- Earbuds -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M150,120 L150,190" />
+
+    <!-- Additional floating elements -->
+    <path
+        android:fillColor="@color/onboarding_illustration_yellow"
+        android:pathData="M120,100 L122,108 L130,110 L122,112 L120,120 L118,112 L110,110 L118,108 Z" />
+    <path
+        android:fillColor="@color/onboarding_illustration_yellow"
+        android:pathData="M180,120 L182,128 L190,130 L182,132 L180,140 L178,132 L170,130 L178,128 Z" />
+
+</vector>

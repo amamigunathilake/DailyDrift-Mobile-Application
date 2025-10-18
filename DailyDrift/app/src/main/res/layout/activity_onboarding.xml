@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/onboarding_background"
+    android:padding="24dp">
+
+    <!-- Main Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/onboardingCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/onboarding_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <!-- Illustration Section -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="32dp">
+
+                <!-- Background Illustration -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/onboarding_illustration"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Meditation illustration" />
+
+            </FrameLayout>
+
+            <!-- Text Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Drift"
+                    android:textColor="@color/onboarding_title"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Build habits and routines"
+                    android:textColor="@color/onboarding_subtitle"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <!-- Get Started Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGetStarted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get started"
+                android:textColor="@color/onboarding_button_text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingVertical="16dp"
+                app:backgroundTint="@color/onboarding_button"
+                app:cornerRadius="16dp"
+                app:elevation="4dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

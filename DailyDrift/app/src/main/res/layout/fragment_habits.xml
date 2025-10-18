@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_surface"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Today Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Today."
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="August 31, 2020"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Calendar Week View -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btnMon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/text_on_primary"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/calendar_today_bg"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/btnTue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/calendar_text"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/calendar_other_bg"
+                android:layout_marginHorizontal="2dp" />
+
+            <TextView
+                android:id="@+id/btnWed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/calendar_text"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/calendar_other_bg"
+                android:layout_marginHorizontal="2dp" />
+
+            <TextView
+                android:id="@+id/btnThu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/calendar_text"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/calendar_other_bg"
+                android:layout_marginHorizontal="2dp" />
+
+            <TextView
+                android:id="@+id/btnFri"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/calendar_text"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/calendar_other_bg"
+                android:layout_marginHorizontal="2dp" />
+
+            <TextView
+                android:id="@+id/btnSat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/calendar_text"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/calendar_other_bg"
+                android:layout_marginHorizontal="2dp" />
+
+            <TextView
+                android:id="@+id/btnSun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/calendar_text"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/calendar_other_bg"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <!-- To Do Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To Do"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- Done Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- Add New Habit Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddHabit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Habit"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/add_habit_button_bg"
+            android:paddingVertical="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Empty State -->
+        <LinearLayout
+            android:id="@+id/emptyState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="48dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No habits yet"
+                android:textColor="@color/text_primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start building your daily routine"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginBottom="32dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEmptyAddHabit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New Habit"
+                android:textColor="@color/text_primary"
+                android:background="@drawable/add_habit_button_bg"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

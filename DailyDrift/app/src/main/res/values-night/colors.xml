@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_background">#121212</color>
+    <color name="primary_surface">#1E1E1E</color>
+    <color name="primary_surface_variant">#2C2C2C</color>
+    <color name="primary_nav_background">#2C2C2C</color>
+
+    <color name="secondary_200">#4A4A4A</color>
+    
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_tertiary">#808080</color>
+    <color name="text_on_primary">#000000</color>
+    <color name="text_on_secondary">#000000</color>
+
+    <color name="success">@color/accent_green_500</color>
+    <color name="warning">@color/accent_amber_500</color>
+    <color name="error">#EF4444</color>
+    <color name="info">#3B82F6</color>
+
+    <color name="disabled">#404040</color>
+    <color name="divider">@color/disabled</color>
+    <color name="focus">@color/secondary_500</color>
+    <color name="hover">@color/primary_surface_variant</color>
+</resources>

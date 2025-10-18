@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern Background Colors -->
+    <color name="primary_background">#F8FAFC</color>
+    <color name="primary_surface">#FFFFFF</color>
+    <color name="primary_surface_variant">#F1F5F9</color>
+    <color name="primary_nav_background">#FFFFFF</color>
+
+    <!-- Modern Primary Colors - Professional Blue Palette -->
+    <color name="primary_700">#1D4ED8</color>
+    <color name="primary_600">#2563EB</color>
+    <color name="primary_500">#3B82F6</color>
+    <color name="primary_400">#60A5FA</color>
+    <color name="primary_300">#93C5FD</color>
+    <color name="primary_200">#BFDBFE</color>
+    <color name="primary_100">#DBEAFE</color>
+    <color name="primary_50">#EFF6FF</color>
+
+    <!-- Success Colors - Modern Green -->
+    <color name="success_500">#10B981</color>
+    <color name="success_400">#34D399</color>
+    <color name="success_300">#6EE7B7</color>
+    <color name="success_200">#A7F3D0</color>
+    <color name="success_100">#D1FAE5</color>
+
+    <!-- Warning Colors - Modern Amber -->
+    <color name="warning_500">#F59E0B</color>
+    <color name="warning_400">#FBBF24</color>
+    <color name="warning_300">#FCD34D</color>
+    <color name="warning_200">#FDE68A</color>
+    <color name="warning_100">#FEF3C7</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_purple_700">#6D28D9</color>
+    <color name="accent_purple_500">#8B5CF6</color>
+    <color name="accent_purple_400">#A78BFA</color>
+    <color name="accent_purple_300">#C4B5FD</color>
+    <color name="accent_purple_200">#DDD6FE</color>
+    <color name="accent_purple_100">#EDE9FE</color>
+
+    <!-- Progress and Status Colors -->
+    <color name="progress_ring">#10B981</color>
+    <color name="progress_track">#E2E8F0</color>
+    <color name="streak_color">#F59E0B</color>
+    <color name="achievement_gold">#FCD34D</color>
+
+    <!-- Text Colors - Enhanced Contrast -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_tertiary">#64748B</color>
+    <color name="text_quaternary">#94A3B8</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_secondary">#FFFFFF</color>
+
+    <!-- Status Colors -->
+    <color name="success">@color/success_500</color>
+    <color name="warning">@color/warning_500</color>
+    <color name="error">#EF4444</color>
+    <color name="error_light">#FEE2E2</color>
+    <color name="info">@color/primary_500</color>
+
+    <!-- Interactive Colors -->
+    <color name="disabled">#CBD5E1</color>
+    <color name="divider">#E2E8F0</color>
+    <color name="focus">@color/primary_500</color>
+    <color name="hover">#F1F5F9</color>
+    <color name="ripple">@color/primary_100</color>
+
+    <!-- Card and Surface Colors -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_elevated">#FFFFFF</color>
+    <color name="surface_overlay">#F8FAFC</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#3B82F6</color>
+    <color name="gradient_end">#8B5CF6</color>
+    <color name="gradient_success_start">#10B981</color>
+    <color name="gradient_success_end">#34D399</color>
+
+    <!-- Legacy Support -->
+    <color name="secondary_500">@color/primary_500</color>
+    <color name="secondary_600">@color/primary_600</color>
+    <color name="secondary_400">@color/primary_400</color>
+    <color name="secondary_200">@color/primary_200</color>
+    <color name="secondary_100">@color/primary_100</color>
+    <color name="secondary_50">@color/primary_50</color>
+
+    <color name="accent_green_500">@color/success_500</color>
+    <color name="accent_green_400">@color/success_400</color>
+    <color name="accent_green_200">@color/success_200</color>
+    <color name="accent_amber_500">@color/warning_500</color>
+    <color name="accent_amber_400">@color/warning_400</color>
+    <color name="accent_amber_200">@color/warning_200</color>
+
+    <!-- Legacy Quick Action Colors -->
+    <color name="quick_card_start">@color/primary_100</color>
+    <color name="quick_card_end">@color/accent_purple_100</color>
+    <color name="quick_chip_stroke">@color/primary_300</color>
+
+    <!-- Habit Card Colors -->
+    <color name="habit_water">#E3F2FD</color>
+    <color name="habit_run">#FCE4EC</color>
+    <color name="habit_plants">#FFF3E0</color>
+    <color name="habit_meditate">#F3E5F5</color>
+    <color name="habit_done">#FFF9C4</color>
+    
+    <!-- Calendar Colors -->
+    <color name="calendar_today">#FF6B35</color>
+    <color name="calendar_other">#FFD700</color>
+    <color name="calendar_text">#000000</color>
+
+    <!-- Onboarding Colors -->
+    <color name="onboarding_background">#E8D5F2</color>
+    <color name="onboarding_card">#FFFFFF</color>
+    <color name="onboarding_title">#6B46C1</color>
+    <color name="onboarding_subtitle">#374151</color>
+    <color name="onboarding_button">#FF6B6B</color>
+    <color name="onboarding_button_text">#FFFFFF</color>
+    <color name="onboarding_illustration_purple">#8B5CF6</color>
+    <color name="onboarding_illustration_yellow">#F59E0B</color>
+    <color name="onboarding_illustration_red">#EF4444</color>
+
+</resources>
+
+

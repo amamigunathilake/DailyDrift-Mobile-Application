@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeColor="@color/primary_500"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/text_secondary"
+        app:placeholderTextColor="@color/text_tertiary"
+        app:startIconTint="@color/primary_500"
+        app:endIconTint="@color/primary_500">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHabitName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/habit_name"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:paddingVertical="16dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeColor="@color/primary_500"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/text_secondary"
+        app:placeholderTextColor="@color/text_tertiary"
+        app:startIconTint="@color/primary_500">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHabitDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/habit_description"
+            android:maxLines="3"
+            android:imeOptions="actionNext"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:paddingVertical="16dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeColor="@color/primary_500"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/text_secondary"
+        app:placeholderTextColor="@color/text_tertiary"
+        app:startIconTint="@color/primary_500">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTargetCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/daily_target"
+            android:inputType="number"
+            android:maxLines="1"
+            android:text="1"
+            android:imeOptions="actionDone"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:paddingVertical="16dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/target_helper_text"
+        android:textColor="@color/text_tertiary"
+        android:textSize="14sp"
+        android:lineSpacingExtra="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDeleteHabit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Delete Habit"
+        android:textColor="@color/error"
+        android:backgroundTint="@color/error_light"
+        android:visibility="gone"
+        app:strokeColor="@color/error"
+        app:strokeWidth="2dp"
+        app:cornerRadius="12dp"
+        android:paddingVertical="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

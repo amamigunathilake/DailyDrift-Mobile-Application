@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.dailydrift.uii.home.HomeFragment"
+        android:label="@string/app_name" />
+
+
+    <fragment
+        android:id="@+id/nav_habits"
+        android:name="com.example.dailydrift.uii.habits.HabitsFragment"
+        android:label="@string/title_habits" />
+
+    <fragment
+        android:id="@+id/nav_mood"
+        android:name="com.example.dailydrift.uii.mood.MoodFragment"
+        android:label="@string/title_mood_journal" />
+
+    <fragment
+        android:id="@+id/nav_chart"
+        android:name="com.example.dailydrift.uii.chart.ChartFragment"
+        android:label="@string/title_chart" />
+
+    <fragment
+        android:id="@+id/nav_hydration"
+        android:name="com.example.dailydrift.uii.hydration.HydrationFragment"
+        android:label="Hydration" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.dailydrift.uii.settings.SettingsFragment"
+        android:label="@string/title_settings" />
+</navigation>

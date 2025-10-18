@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_surface"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Habit Categories Chips -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- All Chip (Selected) -->
+                <TextView
+                    android:id="@+id/chipAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textColor="@color/text_on_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/chip_selected_bg"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="12dp"
+                    android:layout_marginEnd="8dp" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- All Habits Summary Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Habits summary"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Main Progress Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+
+            <!-- Circular Progress -->
+            <FrameLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="24dp">
+
+                <!-- Progress Ring Background -->
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/progress_ring_bg" />
+
+                <!-- Progress Ring -->
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/progressBar"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:max="100"
+                    android:progress="50"
+                    app:trackThickness="16dp"
+                    app:trackColor="@color/progress_track"
+                    app:indicatorColor="@color/primary_500"
+                    app:indicatorSize="200dp" />
+
+                <!-- Center Content -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💪"
+                        android:textSize="24sp"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50%"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                        android:text="Completion rate"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_secondary" />
+
+        </LinearLayout>
+
+            </FrameLayout>
+
+            <!-- Statistics -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <!-- Best Streak -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏆"
+                        android:textSize="20sp"
+                        android:layout_marginEnd="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvBestStreak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25"
+                            android:textSize="18sp"
+                        android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Best streak"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Completed -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="↑"
+                        android:textSize="20sp"
+                        android:textColor="@color/success_500"
+                        android:layout_marginEnd="8dp" />
+
+                        <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCompleted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25"
+                            android:textSize="18sp"
+                                android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                            android:text="Completed"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary" />
+
+                    </LinearLayout>
+
+                        </LinearLayout>
+
+                <!-- Not Done -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="↑"
+                        android:textSize="20sp"
+                        android:textColor="@color/error"
+                        android:layout_marginEnd="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNotDone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Not done"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Best Habit This Week Section -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Section Header -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏅"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="8dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                    android:text="Best habit this week"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="week"
+                    android:textColor="@color/primary_500"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                    android:text="⌄"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="16sp"
+                    android:layout_marginStart="4dp" />
+
+                            </LinearLayout>
+
+            <!-- Best Habit Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/success_100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Habit Icon and Name -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="😌"
+                                android:textSize="20sp"
+                                android:layout_marginEnd="8dp" />
+
+                            <TextView
+                                android:id="@+id/tvBestHabitName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Do morning vacuum"
+                                android:textColor="@color/text_primary"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvBestHabitPercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="70%"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Completion rate"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary" />
+
+                    </LinearLayout>
+
+                    <!-- Habit Stats -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Check-ins -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="↑"
+                                android:textSize="16sp"
+                                android:textColor="@color/success_500"
+                                android:layout_marginEnd="4dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                android:text="Check-ins 7"
+                                    android:textSize="14sp"
+                                android:textColor="@color/text_primary" />
+
+                            </LinearLayout>
+
+                        <!-- Best Streak -->
+                            <LinearLayout
+                            android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                android:text="↓"
+                                android:textSize="16sp"
+                                android:textColor="@color/error"
+                                android:layout_marginEnd="4dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                android:text="Best streak 3"
+                                    android:textSize="14sp"
+                                android:textColor="@color/text_primary" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- Pagination Dots -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/dot_active"
+                android:layout_marginEnd="8dp" />
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/dot_inactive"
+                android:layout_marginEnd="8dp" />
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/dot_inactive"
+                android:layout_marginEnd="8dp" />
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/dot_inactive" />
+
+                </LinearLayout>
+
+        <!-- Mood Chart Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Mood Chart Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mood Chart"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMoodChartPeriod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last 7 days"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- Mood Chart Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/primary_surface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- Chart Container -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/mood_chart_bg"
+                        android:padding="16dp">
+
+                        <!-- Mood Chart Graph -->
+                        <LinearLayout
+                            android:id="@+id/moodChartContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <!-- Day 1 -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/moodDay1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mon"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/text_secondary"
+                                    android:layout_marginBottom="8dp" />
+
+                                <TextView
+                                    android:id="@+id/moodEmoji1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="😊"
+                                    android:textSize="24sp"
+                                    android:layout_marginBottom="8dp" />
+
+                                <View
+                                    android:id="@+id/moodBar1"
+                                    android:layout_width="8dp"
+                                    android:layout_height="0dp"
+                                    android:background="@drawable/mood_bar_bg"
+                                    android:layout_marginTop="8dp" />
+
+                            </LinearLayout>
+
+                            <!-- Day 2 -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/moodDay2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tue"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/text_secondary"
+                                    android:layout_marginBottom="8dp" />
+
+                                <TextView
+                                    android:id="@+id/moodEmoji2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="😊"
+                                    android:textSize="24sp"
+                                    android:layout_marginBottom="8dp" />
+
+                                <View
+                                    android:id="@+id/moodBar2"
+                                    android:layout_width="8dp"
+                                    android:layout_height="0dp"
+                                    android:background="@drawable/mood_bar_bg"
+                                    android:layout_marginTop="8dp" />
+
+                            </LinearLayout>
+
+                            <!-- Day 3 -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/moodDay3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wed"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/text_secondary"
+                                    android:layout_marginBottom="8dp" />
+
+                                <TextView
+                                    android:id="@+id/moodEmoji3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="😊"
+                                    android:textSize="24sp"
+                                    android:layout_marginBottom="8dp" />
+
+                                <View
+                                    android:id="@+id/moodBar3"
+                                    android:layout_width="8dp"
+                                    android:layout_height="0dp"
+                                    android:background="@drawable/mood_bar_bg"
+                                    android:layout_marginTop="8dp" />
+
+                            </LinearLayout>
+
+                            <!-- Day 4 -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/moodDay4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Thu"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/text_secondary"
+                                    android:layout_marginBottom="8dp" />
+
+                                <TextView
+                                    android:id="@+id/moodEmoji4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="😊"
+                                    android:textSize="24sp"
+                                    android:layout_marginBottom="8dp" />
+
+                                <View
+                                    android:id="@+id/moodBar4"
+                                    android:layout_width="8dp"
+                                    android:layout_height="0dp"
+                                    android:background="@drawable/mood_bar_bg"
+                                    android:layout_marginTop="8dp" />
+
+                            </LinearLayout>
+
+                            <!-- Day 5 -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/moodDay5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Fri"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/text_secondary"
+                                    android:layout_marginBottom="8dp" />
+
+                                <TextView
+                                    android:id="@+id/moodEmoji5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="😊"
+                                    android:textSize="24sp"
+                                    android:layout_marginBottom="8dp" />
+
+                                <View
+                                    android:id="@+id/moodBar5"
+                                    android:layout_width="8dp"
+                                    android:layout_height="0dp"
+                                    android:background="@drawable/mood_bar_bg"
+                                    android:layout_marginTop="8dp" />
+
+                            </LinearLayout>
+
+                            <!-- Day 6 -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/moodDay6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sat"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/text_secondary"
+                                    android:layout_marginBottom="8dp" />
+
+                                <TextView
+                                    android:id="@+id/moodEmoji6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="😊"
+                                    android:textSize="24sp"
+                                    android:layout_marginBottom="8dp" />
+
+                                <View
+                                    android:id="@+id/moodBar6"
+                                    android:layout_width="8dp"
+                                    android:layout_height="0dp"
+                                    android:background="@drawable/mood_bar_bg"
+                                    android:layout_marginTop="8dp" />
+
+                            </LinearLayout>
+
+                            <!-- Day 7 -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/moodDay7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sun"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/text_secondary"
+                                    android:layout_marginBottom="8dp" />
+
+                                <TextView
+                                    android:id="@+id/moodEmoji7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="😊"
+                                    android:textSize="24sp"
+                                    android:layout_marginBottom="8dp" />
+
+                                <View
+                                    android:id="@+id/moodBar7"
+                                    android:layout_width="8dp"
+                                    android:layout_height="0dp"
+                                    android:background="@drawable/mood_bar_bg"
+                                    android:layout_marginTop="8dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <!-- Mood Chart Stats -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <!-- Average Mood -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvAverageMood"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="😊"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Average"
+                                android:textSize="12sp"
+                                android:textColor="@color/text_secondary" />
+
+                        </LinearLayout>
+
+                        <!-- Best Day -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvBestMood"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="😄"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Best Day"
+                                android:textSize="12sp"
+                                android:textColor="@color/text_secondary" />
+
+                        </LinearLayout>
+
+                        <!-- Total Entries -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvMoodEntries"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary_500" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Entries"
+                                android:textSize="12sp"
+                                android:textColor="@color/text_secondary" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- Your Existing Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddHabit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add_new_habit"
+                    android:textColor="@color/text_on_primary"
+                    app:backgroundTint="@color/primary_500"
+                    app:cornerRadius="12dp"
+                    android:paddingVertical="16dp"
+                    android:layout_marginEnd="8dp"
+                    app:icon="@drawable/ic_add"
+                    app:iconPadding="8dp"
+                    app:iconGravity="textStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnShareHowYouFeel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/share_how_you_feel"
+                    android:textColor="@color/text_on_primary"
+                    app:backgroundTint="@color/accent_purple_500"
+                    app:cornerRadius="12dp"
+                    android:paddingVertical="16dp"
+                    android:layout_marginStart="8dp"
+                    app:icon="@drawable/ic_mood"
+                    app:iconPadding="8dp"
+                    app:iconGravity="textStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManageHabits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/your_habits"
+                android:textColor="@color/primary_500"
+                android:backgroundTint="@color/primary_100"
+                app:strokeColor="@color/primary_300"
+                app:strokeWidth="2dp"
+                app:cornerRadius="12dp"
+                android:paddingVertical="16dp"
+                android:layout_marginTop="12dp"
+                app:icon="@drawable/ic_habit"
+                app:iconPadding="8dp"
+                app:iconGravity="textStart"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Modern Habits Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/your_habits"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvHabitsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 habits"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+
+        <!-- Enhanced Empty State -->
+        <LinearLayout
+            android:id="@+id/emptyState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_habits_empty"
+                android:contentDescription="@string/empty_habits_icon_desc"
+                android:layout_marginBottom="24dp"
+                android:alpha="0.6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_habits_title"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_habits_ready_subtitle"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="24dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEmptyAddHabit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_building_habits"
+                android:textColor="@color/text_on_primary"
+                app:backgroundTint="@color/primary_500"
+                app:cornerRadius="12dp"
+                android:paddingHorizontal="32dp"
+                android:paddingVertical="16dp"
+                app:icon="@drawable/ic_add"
+                app:iconPadding="8dp"
+                app:iconGravity="textStart"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

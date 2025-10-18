@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">DailyDrift</string>
+
+    <string name="landing_tagline">Build better days, one habit at a time</string>
+
+    <string name="title_home">Home</string>
+    <string name="mood_saved_toast">Mood saved!</string>
+    <string name="completion_rate">Completion rate</string>
+
+
+
+
+
+    <string name="habits_title">Daily Habits</string>
+    <string name="habits_subtitle">Track your daily wellness routines and build healthy habits</string>
+    <string name="todays_progress">Today\'s Progress</string>
+    <string name="habits_completed" formatted="false">%d/%d habits completed</string>
+    <string name="progress_percent">%d%%</string>
+    <string name="add_new_habit">Add New Habit</string>
+    <string name="your_habits">Your Habits</string>
+    <string name="empty_habits_title">No habits yet</string>
+    <string name="empty_habits_subtitle">Start by adding your first wellness habit</string>
+    <string name="empty_habits_icon_desc">Empty habits illustration</string>
+
+    <string name="habit_deleted">Habit deleted</string>
+    <string name="undo">UNDO</string>
+    <string name="habit_options">Habit Options</string>
+    <string name="delete_habit_message">Are you sure you want to delete "%1$s"?</string>
+
+
+
+    <string name="add_new_habit_dialog">Add New Habit</string>
+    <string name="edit_habit_dialog">Edit Habit</string>
+    <string name="habit_name">Habit Name</string>
+    <string name="habit_description">Description (Optional)</string>
+    <string name="daily_target">Daily Target</string>
+    <string name="target_helper_text">How many times do you want to complete this habit per day?</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="error_habit_name_required">Habit name is required</string>
+    <string name="error_target_required">Target count is required</string>
+    <string name="error_invalid_number">Please enter a valid number</string>
+    <string name="error_target_minimum">Target count must be at least 1</string>
+
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="delete_habit">Delete Habit</string>
+    <string name="delete_confirmation">Are you sure you want to delete \"%s\"?</string>
+
+    <string name="habit_item_content_desc">Habit item card</string>
+    <string name="habit_completion_checkbox">Mark habit as completed</string>
+    <string name="habit_name_placeholder">Habit Name</string>
+    <string name="habit_description_placeholder">Description</string>
+    <string name="habit_progress_placeholder">0/1</string>
+    <string name="habit_progress_content_desc">Progress: 0 out of 1 completed</string>
+
+    <string name="title_habits">Habits</string>
+    <string name="title_mood_journal">Mood</string>
+    <string name="title_chart">Trends</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="mood_journal">Mood Journal</string>
+    <string name="mood_journal_subtitle">How are you feeling today?</string>
+    <string name="log_mood">Log Mood</string>
+    <string name="mood_history">Mood History</string>
+    <string name="empty_mood_title">No mood entries yet</string>
+    <string name="empty_mood_subtitle">Log your first mood to see your emotional journey</string>
+    <string name="empty_mood_icon_desc">Empty mood journal illustration</string>
+
+    <string name="select_mood">Select a mood</string>
+    <string name="add_note_optional">Add a note (optional)</string>
+    <string name="choose_your_mood">Choose your mood</string>
+
+
+    <string name="mood_trends">Mood Trends</string>
+    <string name="mood_trends_subtitle">Your emotional journey over the past week</string>
+    <string name="chart_placeholder">Log some moods to see your trends appear here!</string>
+    <string name="weekly_mood_stats">Weekly Mood Stats</string>
+    <string name="average_mood">Average</string>
+    <string name="total_entries">Entries</string>
+    <string name="most_common">Most Common</string>
+
+
+    <string name="settings">Settings</string>
+    <string name="settings_subtitle">Customize your app experience</string>
+    <string name="appearance">Appearance</string>
+    <string name="theme">Theme</string>
+    <string name="system_default">System Default</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="notifications">Notifications</string>
+    <string name="notifications_description">Habit reminders and mood check-ins</string>
+    <string name="hydration_reminders">Hydration Reminders</string>
+    <string name="hydration_interval">Reminder Interval</string>
+    <string name="one_hour">1 hour</string>
+
+    <string name="thirty_minutes">30 minutes</string>
+    <string name="two_hours">2 hours</string>
+    <string name="three_hours">3 hours</string>
+    <string name="four_hours">4 hours</string>
+
+
+    <string name="share_week">Share your weekly mood</string>
+    <string name="share_chooser_title">Share via</string>
+    <string name="share_subject">Weekly Mood Summary</string>
+
+    <string name="habits_header_title">Let\'s build amazing habits together!</string>
+    <string name="add_habit_button">Add Habit</string>
+    <string name="your_daily_habits">Your Daily Habits ✨</string>
+    <string name="empty_habits_ready_title">Ready to start your journey? 🚀</string>
+    <string name="empty_habits_ready_subtitle">Every great journey begins with a single step. Create your first habit and watch how small daily actions transform your life.</string>
+    <string name="start_building_habits">Start Building Habits</string>
+
+    <string name="mood_header_title">How are you feeling today? 😊</string>
+    <string name="mood_header_subtitle">Every feeling is valid and worth acknowledging.</string>
+    <string name="share_how_you_feel">Share How You Feel</string>
+    <string name="recent_mood_entries">Recent Mood Entries</string>
+    <string name="empty_mood_ready_title">Your mood journey starts here! 🌟</string>
+    <string name="empty_mood_ready_subtitle">Tap \'Share How You Feel\' to begin tracking your emotions and building awareness of your daily well-being.</string>
+
+    <string name="chart_emoji_happy">😊</string>
+    <string name="chart_emoji_neutral">😐</string>
+    <string name="chart_zero_entries">0</string>
+
+    <string name="app_version">DailyDrift v1.0</string>
+
+</resources>
